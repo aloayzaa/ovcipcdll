@@ -27,21 +27,21 @@ class Reservas_usuario_model extends CI_Model{
     
     
     
-        function estaQry() {
-      $query = $this->db_biblioteca->query("SELECT c.desccap as Capitulo, t.Tesis 
-                                            FROM bdcolegio.capitulo c
-                                            inner join (SELECT codcap, count( * ) Tesis
-                                            FROM tbl_bib_catatesis
-                                            GROUP BY codcap
-                                            )t ON c.codcap = t.codcap");
- //       $query = $this->bdhelpdesk->query("CALL USP_HLDSK_S_Area()");
-        if ($query->num_rows() > 0) {
-            $this->db_biblioteca->close();
-            return $query->result();
-        } else {
-            return null;
-        }
-    }
+//        function estaQry() {
+//      $query = $this->db_biblioteca->query("SELECT c.desccap as Capitulo, t.Tesis 
+//                                            FROM bdcolegio.capitulo c
+//                                            inner join (SELECT codcap, count( * ) Tesis
+//                                            FROM tbl_bib_catatesis
+//                                            GROUP BY codcap
+//                                            )t ON c.codcap = t.codcap");
+// //       $query = $this->bdhelpdesk->query("CALL USP_HLDSK_S_Area()");
+//        if ($query->num_rows() > 0) {
+//            $this->db_biblioteca->close();
+//            return $query->result();
+//        } else {
+//            return null;
+//        }
+//    }
     
     
       function ultimaTesisQry() {

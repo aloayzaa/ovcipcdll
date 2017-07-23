@@ -47,13 +47,13 @@
 					<?php 
 					$valor = $this->session->userdata('nUsuTipo');
 					if ($valor == '7'){
-					  echo '<li><a href="http://www.cip-trujillo.org/ovcipcdll/intranet/actualizacion_colegiado">Datos</a></li>';
+					  echo '<li><a href="http://localhost/ovcipcdll/intranet/actualizacion_colegiado">Datos</a></li>';
 					} else{
-					 echo '<li><a href="http://www.cip-trujillo.org/ovcipcdll/intranet/actualizacion_usuarioexterno">Datos</a></li>';
+					 echo '<li><a href="http://localhost/ovcipcdll/intranet/actualizacion_usuarioexterno">Datos</a></li>';
 					}
 					?> 
 
-                        <li><a href="http://www.cip-trujillo.org/ovcipcdll/intranet/cambiar_clave">Contraseña</a></li>
+                        <li><a href="http://localhost/ovcipcdll/intranet/cambiar_clave">Contraseña</a></li>
                     </ul>
                 </div>
                 <div class="item home">
@@ -61,7 +61,7 @@
                     <a class="icon"></a>
                     <h2>Habilidad</h2>
                     <ul>
-                        <li><a href="http://www.cip-trujillo.org/ovcipcdll/intranet/habilidad_colegiado">Consultar</a></li>
+                        <li><a href="http://localhost/ovcipcdll/intranet/habilidad_colegiado">Consultar</a></li>
                     </ul>
                 </div>
                 <div class="item shop">
@@ -69,7 +69,7 @@
                     <a class="icon"></a>
                     <h2>Enlaces</h2>
                     <ul>
-                        <li><a target="_blank" href="http://www.cip-trujillo.org/">Portal Web</a></li>
+                        <li><a target="_blank" href="http://localhost/">Portal Web</a></li>
                         <li><a target="_blank" href="https://www.facebook.com/CipLaLibertad">Facebook</a></li>
                         <li><a target="_blank" href="https://twitter.com/cipcdll">Twitter</a></li>
                     </ul>

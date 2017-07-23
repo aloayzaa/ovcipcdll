@@ -14,8 +14,10 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://www.cip-trujillo.org/ovcipcdll';
+//$config['base_url']	= 'http://www.cip-trujillo.org/ovcipcdll';
 //$config['base_url']	= 'http://10.10.10.53/ovcipcdll';
+$config['base_url']	= 'http://localhost/ovcipcdll';
+
 
 /*
 |--------------------------------------------------------------------------

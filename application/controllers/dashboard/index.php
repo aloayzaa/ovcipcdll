@@ -6,8 +6,8 @@ class Index extends CI_Controller {
     function __construct() {
         parent::__construct();
  $this->db_colegiado = $this->load->database('colegiado', TRUE);
-                 $this->load->model('biblioteca/reservas_usuario_model');
-                         $this->db_biblioteca=$this->load->database("bdbiblioteca",TRUE);
+                 //$this->load->model('biblioteca/reservas_usuario_model');
+                         //$this->db_biblioteca=$this->load->database("bdbiblioteca",TRUE);
         $this->_Esta_logeado(); 
   $this->_Esta_migrado();
     }
@@ -21,10 +21,10 @@ else{
             $data['main_content'] = 'dashboard/cuerpo2';
 }
         $data['titulo'] = 'Oficina Virtual v3.0';
-         $data['ver']=$this->reservas_usuario_model->estaQry();
-         $data['ver1']=$this->reservas_usuario_model->ultimaTesisQry();
-         $data['ver2']=$this->reservas_usuario_model->ultimaRyLQry();
-         $data['ver3']=$this->reservas_usuario_model->listaUltimaReservas();
+        // $data['ver']=$this->reservas_usuario_model->estaQry();
+         //$data['ver1']=$this->reservas_usuario_model->ultimaTesisQry();
+         //$data['ver2']=$this->reservas_usuario_model->ultimaRyLQry();
+         //$data['ver3']=$this->reservas_usuario_model->listaUltimaReservas();
         $this->load->view('dashboard/template',$data);
     }
 
@@ -45,7 +45,7 @@ else{
         if($migrado == 0 && $ntypo ==7){
             
             echo "<script>
-                 document.location='http://www.cip-trujillo.org/registroexterno/alerta/migration/".$this->migration_model->enc()."';
+                 document.location='http://localhost/registroexterno/alerta/migration/".$this->migration_model->enc()."';
                 </script>";
         }
     }

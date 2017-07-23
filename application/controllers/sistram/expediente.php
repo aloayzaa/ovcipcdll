@@ -69,6 +69,7 @@ class Expediente extends CI_Controller {
         $observacion = $this->input->post('observacion');
         $usuarioAdmin = $this->input->post('usuarioreenviar');
         if($usuarioAdmin==1){
+            
             $usuario="Secretario";
         }
         else{

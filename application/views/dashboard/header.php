@@ -106,7 +106,7 @@
                 <a href="<?php echo URL_MAIN . 'dashboard/index'; ?>" class='company'>Oficina Virtual v3.0</a>
                 <ul class='mini'>
                     <li class='dropdown messageContainer'>
-                        <a target="_blank" href="http://www.cip-trujillo.org/ayuda/client.php?locale=sp&style=original&url=http%3A//www.cip-trujillo.org/&referrer=" class='dropdown-toggle' data-toggle='dropdown'>
+                        <a target="_blank" href="http://localhost/ayuda/client.php?locale=sp&style=original&url=http%3A//localhost/&referrer=" class='dropdown-toggle' data-toggle='dropdown'>
                             <img src="<?php echo URL_IMG; ?>dashboard/icons/fugue/balloons-white.png" alt="">
                             Chat en Linea
                             <span class="label label-info">1</span>

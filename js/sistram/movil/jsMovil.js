@@ -1,5 +1,5 @@
 function aprobarExpediente(){
-    var pagina="http://192.168.0.200/oficinavirtual/sistram/movil";
+    var pagina="http://localhost/oficinavirtual/sistram/movil";
     var expedienteID=$("#expedienteID").val();
     alert("saksad"+expedienteID);
     var data={expediente:expedienteID};
@@ -35,7 +35,7 @@ function mostrarRechazado(){
 }
 function observarExpediente(){
     
-     var pagina="http://192.168.0.200/oficinavirtual/sistram/movil";
+     var pagina="http://localhost/oficinavirtual/sistram/movil";
     var expedienteID=$("#expedienteID").val();
     var observacion=$("#txt_observacion").val();
      var data={expediente:expedienteID,
@@ -56,7 +56,7 @@ function observarExpediente(){
 }
 function rechazarExpediente(){
     
-     var pagina="http://192.168.0.200/oficinavirtual/sistram/movil";
+     var pagina="http://localhost/oficinavirtual/sistram/movil";
     var expedienteID=$("#expedienteID").val();
     var observacion=$("#txt_observacion_rechazado").val();
      var data={expediente:expedienteID,

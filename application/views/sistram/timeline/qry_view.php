@@ -14,7 +14,7 @@
             
             success:  function (response) {
                 $("#preload").html("");
-             window.open('http://www.cip-trujillo.org/ovcipcdll/uploads/sistram/reporte/'+response,'_blank')                
+             window.open('http://localhost/ovcipcdll/uploads/sistram/reporte/'+response,'_blank')                
  
             },
             error: function(msg){                
